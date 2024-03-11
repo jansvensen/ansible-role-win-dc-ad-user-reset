@@ -9,7 +9,6 @@
     password: '{{ dc.domain.passwords.user }}'
     domain_password: '{{ dc.domain.passwords.user }}'
     account_locked: false
-    password_expired: false
     password_never_expires: true
     update_password: always
     user_cannot_change_password: true
@@ -25,7 +24,6 @@
     password: '{{ dc.domain.passwords.user }}'
     domain_password: '{{ dc.domain.passwords.user }}'
     account_locked: false
-    password_expired: false
     password_never_expires: true
     update_password: always
     user_cannot_change_password: true
