@@ -6,7 +6,7 @@
 - name: Reset standard user passwords and unlock accounts
   community.windows.win_domain_user:
     name: '{{ item }}'
-    password: '{{ dc.domain.passwords.user }}'
+    password: '{{ dc.domain.passwords.service }}'
     account_locked: false
     password_never_expires: true
     update_password: always
@@ -20,7 +20,7 @@
 - name: Reset service user passwords and unlock accounts
   community.windows.win_domain_user:
     name: '{{ item }}'
-    password: '{{ dc.domain.passwords.service }}'
+    password: '{{ dc.domain.passwords.user }}'
     account_locked: false
     password_never_expires: true
     update_password: always
